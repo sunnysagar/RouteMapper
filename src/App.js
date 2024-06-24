@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState } from 'react';
 import { LoadScript } from '@react-google-maps/api';
 import Map from './components/Map';

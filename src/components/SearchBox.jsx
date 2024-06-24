@@ -1,4 +1,3 @@
-// src/components/SearchBox.js
 import React, { useRef, useEffect, useCallback } from 'react';
 
 const SearchBox = ({ label, onSelect }) => {

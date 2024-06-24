@@ -1,4 +1,3 @@
-// src/components/Map.js
 import React, { useState, useEffect } from 'react';
 import { GoogleMap, DirectionsService, DirectionsRenderer } from '@react-google-maps/api';
 
