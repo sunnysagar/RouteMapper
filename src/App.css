@@ -1,38 +1,89 @@
-.App {
+/* App.css */
+
+.app {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-container {
+  position: absolute;
+  width: 560px;
+  height: 511px;
+  margin: 160px 100px;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.map-container {
+  position: absolute;
+  width: 560px;
+  height: 511px;
+  left: 776px;
+  top: 170px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.black-bold {
+  color: black;
+  font-weight: bold;
+}
+
+.center {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
+.result{
+  background-color: white;
+  font-size: 20px;
+  font-weight: 400;
+  box-sizing: border-box;
+  border: solid, 2px, black;
+  padding: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ .transit-mode-container label, select{
+  margin: 5px;
+  padding: 10px;
+  font-size: 21px;
+ }
+
+ .btn {
+  /* CTA */
+
+/* position: absolute;
+width: 141px;
+height: 62px;
+left: 505px;
+top: 262px; */
+
+/* $brandColorPrimary */
+background: #067ff0;
+border-radius: 32px;
+
+ }
+
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column; /* Stack items in column */
   }
-  to {
-    transform: rotate(360deg);
+
+  .map-container {
+    position: relative;
+    width: 100%; /* Full width */
+    height: 50vh; /* Adjust height as needed */
+    top: 0;
+    left: 0;
+  }
+
+  .search-container {
+    position: relative;
+    width: 100%; /* Full width */
+    margin: 20px 0; /* Adjust margin as needed */
   }
 }
