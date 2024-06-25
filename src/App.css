@@ -67,9 +67,10 @@ border-radius: 32px;
 
  }
 
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
   .app {
-    flex-direction: column; /* Stack items in column */
+    flex-direction: column; /* Stack items in a column */
+    align-items: center;
   }
 
   .map-container {
@@ -78,11 +79,18 @@ border-radius: 32px;
     height: 50vh; /* Adjust height as needed */
     top: 0;
     left: 0;
+    margin: 0; /* Reset margins */
+    padding: 5px;
+    order: -1;
   }
 
   .search-container {
     position: relative;
     width: 100%; /* Full width */
     margin: 20px 0; /* Adjust margin as needed */
+    top: 0;
+    left: 0;
+    height: auto; /* Adjust height as needed */
+    order: 1;
   }
 }
