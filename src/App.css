@@ -1,9 +1,19 @@
+html{
+  height: 100%;
+}
+body{
+  margin: 0;
+  padding: 0;
+  height:100vh;
+  background-color: rgba(176, 228, 243, 0.726);
+  background-repeat: repeat;
+  
+}
 
-.app {
+.app{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  text-align: center;
 }
 
 .search-container {
@@ -27,45 +37,75 @@
   font-weight: bold;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
+.center{
+  width: fit-content;
+  display: inline;
   align-items: center;
-  height: 100%;
-  text-align: center;
-
+  padding: 30px;
+  
 }
 
+
 .result{
-  background-color: white;
+  background-color: rgb(255, 255, 253);
   font-size: 20px;
   font-weight: 400;
   box-sizing: border-box;
-  border: solid, 2px, black;
-  padding: 10px;
+  border: solid, 2px, white;
+  border-radius: 12px;
+  padding: 13px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  }
 
  .transit-mode-container label, select{
-  margin: 5px;
+  margin-top: 15px;
+  margin-left: 8px;
+  margin-bottom: 8px;
   padding: 10px;
   font-size: 21px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
  }
 
- .btn {
-  /* CTA */
+ select{
+  background-color: transparent;
+  box-shadow: none;
+  border: solid, 2px, black;
+  border-radius: 12px;
+ 
+ }
 
-/* position: absolute;
-width: 141px;
-height: 62px;
-left: 505px;
-top: 262px; */
+ .button-container{
 
-/* $brandColorPrimary */
-background: #067ff0;
-border-radius: 32px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
 
  }
+ .btn{
+  background-color: rgb(39, 163, 251);
+  padding: 12px;
+  font-size: 18px;
+  width: 24%;
+  border-radius: 21px;
+  border: 0;
+ }
+ .button-container :hover{
+  cursor: pointer;
+  background-color: rgb(241, 219, 47);
+ }
+
+ .distance-bold {
+  font-weight: bold;
+}
+
+.distance-blue {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+  color: rgb(9, 178, 250);
+}
+
 
  @media (max-width: 768px) {
   .app {
@@ -92,5 +132,6 @@ border-radius: 32px;
     left: 0;
     height: auto; /* Adjust height as needed */
     order: 1;
+    padding: 8px;
   }
 }

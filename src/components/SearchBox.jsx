@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useCallback } from 'react';
+import './style.css';
 
 const SearchBox = ({ label, onSelect }) => {
   const inputRef = useRef(null);
@@ -29,11 +30,10 @@ const SearchBox = ({ label, onSelect }) => {
     <div>
       <label>{label}</label>
       <br></br>
-      <input
+      <input className="input-field"
         ref={inputRef}
         type="text"
         placeholder={`Enter ${label}`}
-        style={{ width: '70%', padding: '8px', margin: '8px 3px', backgroundColor: 'white'}}
       />
     </div>
   );

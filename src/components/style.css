@@ -1,0 +1,9 @@
+
+.input-field{
+     width: 70%;
+     padding: 8px; 
+     margin: 8px;
+     background-color: white;
+     border: solid, 2px, rgb(9, 10, 1);
+     border-radius: 30px;
+}
