@@ -67,9 +67,15 @@ To run the project locally:
    git clone https://github.com/sunnysagar/route-mapper.git
    ```
 2. Navigate to projct directory
-   ``` cd route-mapper
+   ```
+   cd route-mapper
+   ```
 3. Install dependencies
-   ```npm install
+   ```
+   npm install
+   ```
 4. Start the development server.
-   ``` npm start 
+   ```
+   npm start
+   ``` 
  
