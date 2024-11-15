@@ -4,7 +4,7 @@
 The Route Mapper is a web application built using **React** and **Google Maps API**. It allows users to plan routes by specifying an **origin**, **destination**, and **multiple stops (waypoints)**. The application calculates the **distance** and **ETA (Estimated Time of Arrival)** between the given locations and displays the information dynamically. Users can choose between different **transit modes** such as driving, biking, and walking. The app is designed to be responsive and works seamlessly on both desktop and mobile devices.
 
 ## Deployed Link - Netlify
-[Link]https://routemapper.netlify.app/
+[Link](https://routemapper.netlify.app/)
 
 ## Objective
 The primary objective of the Route Mapper project is to provide an easy-to-use interface for users to calculate routes with multiple stops. The application leverages the Google Maps API to:
