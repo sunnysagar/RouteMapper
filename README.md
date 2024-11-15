@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Route Mapper
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+The Route Mapper is a web application built using **React** and **Google Maps API**. It allows users to plan routes by specifying an **origin**, **destination**, and **multiple stops (waypoints)**. The application calculates the **distance** and **ETA (Estimated Time of Arrival)** between the given locations and displays the information dynamically. Users can choose between different **transit modes** such as driving, biking, and walking. The app is designed to be responsive and works seamlessly on both desktop and mobile devices.
 
-## Available Scripts
+## Objective
+The primary objective of the Route Mapper project is to provide an easy-to-use interface for users to calculate routes with multiple stops. The application leverages the Google Maps API to:
+1. Plot routes.
+2. Calculate distances and ETA.
+3. Offer different transit options (driving, biking, and walking).
+4. Allow users to add or remove stops dynamically.
 
-In the project directory, you can run:
+This project aims to help users plan their trips or deliveries by providing them with an intuitive interface and reliable distance and time calculations.
 
-### `npm start`
+## Tech Stack Used
+- **Frontend**: 
+  - **React**: For building the user interface.
+  - **React Google Maps API**: For integrating Google Maps functionalities.
+  - **HTML, CSS**: For structure and styling.
+  - **JavaScript (ES6+)**: For handling logic and interactions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **API**:
+  - **Google Maps API**: For rendering maps, calculating routes, distances, and ETA, and handling places search (autocomplete).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Tools**:
+  - **NPM**: For managing dependencies.
+  - **React Hooks**: For managing state and lifecycle methods (useState, useEffect, useRef).
+  - **Flexbox and CSS Grid**: For responsive layout design.
 
-### `npm test`
+## Features
+1. **Route Mapping**:
+   - Users can set an **origin**, **destination**, and add multiple **stops (waypoints)**.
+   - The map dynamically updates as the user adds or removes stops.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Distance and ETA Calculation**:
+   - The app calculates and displays the **distance** and **ETA** between the **origin**, **destination**, and **waypoints**.
+   - Supports different transit modes: **Driving**, **Biking**, and **Walking**.
 
-### `npm run build`
+3. **Dynamic Stop Addition and Removal**:
+   - Users can add and remove stops using a search box that interacts with the Google Places API.
+   - Stops are added dynamically to the route, and the distance and ETA are recalculated.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Responsive Design**:
+   - The application is responsive and adapts to different screen sizes.
+   - On mobile screens, the map is displayed at the top, with the search boxes placed below.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. **Transit Mode Selection**:
+   - Users can choose the transit mode for calculating the ETA (Driving, Walking, or Biking).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Future Scope
+1. **Offline Maps**: Integrate offline maps functionality for users who may not have continuous internet access.
+2. **User Authentication**: Implement user login and saving favorite routes or destinations.
+3. **Real-Time Traffic Updates**: Add real-time traffic data to ETA calculation.
+4. **Custom Map Styling**: Allow users to choose custom map styles for personalization.
+5. **Integration with Third-Party Services**: Enable integration with services like Uber, Lyft, or local delivery systems for real-time availability and cost estimates.
 
-### `npm run eject`
+## Conclusion
+The Route Mapper project provides a user-friendly way to plan and visualize routes with multiple stops. It integrates with the Google Maps API to deliver accurate distance, ETA, and routing functionality. This application is ideal for anyone who needs to plan trips or deliveries, offering flexibility with transit mode options and dynamic stop handling. The responsive design ensures usability across all devices, making it an effective tool for route planning.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Setup Instructions
+To run the project locally:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/sunnysagar/route-mapper.git
+   ```
+2. Navigate to projct directory
+   ``` cd route-mapper
+3. Install dependencies
+   ```npm install
+4. Start the development server.
+   ``` npm start 
+ 
